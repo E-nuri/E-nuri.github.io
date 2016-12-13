@@ -1,38 +1,35 @@
+$padding : 10px;
+$margin 10px 5px;
+
+
 #profile{
-		border:5px solid GREEN;
 		border-radius:50%;
 		margin : auto;
 }
 
 #private_info{
-		padding : 10px;
-		margin : 10px 5px;
-		border : 1px solid blue;
-
+		padding : $padding;
+		margin : $margin;
 }
 
 #experience{
-		padding : 10px;
-		margin : 10px 5px;
-		border : 1px solid blue;
+		padding : $padding;
+		margin : $margin;
 }
 
 #activity{
-		padding : 10px;
-		margin : 10px 5px;
-		border : 1px solid blue;
+		padding : $padding;
+		margin : $margin;
 }
 
 #prize{
-		padding : 10px;
-		margin : 10px 5px;
-		border : 1px solid blue;
+		padding : $padding;
+		margin : $margin;
 }
 
 #licence{
-		padding : 10px;
-		margin : 10px 5px;
-		border : 1px solid blue;
+		padding : $padding;
+		margin : $margin;
 }
 
 
