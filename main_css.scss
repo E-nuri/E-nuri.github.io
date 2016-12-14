@@ -1,46 +1,44 @@
-$padding : 10px;
-$margin 10px 5px;
 
-
-#profile{
-		border-radius:50%;
-		margin : auto;
+@mixin t_align($spot){
+  text-align: $spot;
 }
 
-#private_info{
-		padding : $padding;
-		margin : $margin;
+@mixin bg_color($color){
+  background-color: $color;
 }
 
-#experience{
-		padding : $padding;
-		margin : $margin;
+paper_m{
+  width: 600px;
 }
 
-#activity{
-		padding : $padding;
-		margin : $margin;
+paper_m_content_float{
+  float: left;
 }
 
-#prize{
-		padding : $padding;
-		margin : $margin;
-}
-
-#licence{
-		padding : $padding;
-		margin : $margin;
-}
-
-
+img.pic{
+	 display: block;
+	 margin: auto;
+}	 
 
 body {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 16px;
 		line-height: 1.5;
 		margin: 0 auto;
-		max-width: 800px;
+		max-width: 850px;
 		padding: 2em 2em 4em;
+		@include bg_color(lightgrey);
+}
+
+cv{
+		width: 820px;
+		margin:- auto;
+		@include bg_color(white);
+		display: block;
+		padding: 0;
+		overflow: hidden;
+		padding-bottom: 80px;
+		padding-top: 7px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,37 +46,53 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		line-height: 1.3;
 }
-
-h1 {
-		text-align:center;
+h1{
+		@include t_align(center);
 }
 
 h2 {
+		width: 180px;
+		height: 30px;
+		@include t_align(right);
+		float: left;
+		padding: 0;
+		margin: 0;
+		clear: both;
+		margin-bottom: -12px;
 		margin-top: 1.3em;
+		color: #1b4491;
 }
-
 
 b, strong {
 		font-weight: 600;
 }
 
-
-#name{
-		border : none;
-		font-size : 30px;
-		text-align : center;
-}
-
-
 paper-material{
-		display: block;
-		background-color: rgb(300, 300, 300);
+		@extend paper_m;
+		@include bg_color(white);
 		box-sizing: border-box;
-		padding: 0 0 15px 0;
 		border-radius: 10px;
+		display: block;
+		float: right;
+		padding: 0 0 5px 0;
 }
 
-paper-material p{
-		color: rgb(85, 85, 85);
-		line-heiight: 20px;
+paper-material ul{
+		@extend paper_m;
+		@extend paper_m_content_float;
+		background:none;
+		list-style-type:square;
+		margin-left:10px;
+		margin-bottom: 10px;
+		padding-top: 12px;
+}
+
+paper-material ul.li{
+  @extend paper_m;
+  @extend paper_m_content_float;
+		background-position:0 .5em;
+		display: block;
+		list-style-type: square;
+		margin-left: 30px;
+		
 }
