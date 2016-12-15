@@ -2,8 +2,8 @@
 @import 'resource';
 
 img.pic{
-	 display: block;
-	 margin: auto;
+		display: block;
+		margin: auto;
 }	 
 
 body {
@@ -11,7 +11,7 @@ body {
 		font-size: 16px;
 		line-height: 1.5;
 		margin: 0 auto;
-		max-width: 850px;
+		max-width: 1100px;
 		padding: 2em 2em 4em;
 		@include bg_color(lightgrey);
 }
@@ -46,7 +46,17 @@ h2 {
 		clear: both;
 		margin-bottom: -12px;
 		margin-top: 1.3em;
-		color: #1b4491;
+		@include txt_color(#1b4491);
+}
+
+h3{
+		width: 180px;
+		height: 30px;
+
+		@include t_align(left);
+		@include txt_color(#1b4491);
+		padding: 10px;
+
 }
 
 b, strong {
@@ -74,11 +84,11 @@ paper-material ul{
 }
 
 paper-material ul.li{
-  @extend paper_m;
-  @extend paper_m_content_float;
+		@extend paper_m;
+		@extend paper_m_content_float;
 		background-position:0 .5em;
 		display: block;
 		list-style-type: square;
 		margin-left: 30px;
-		
+
 }

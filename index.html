@@ -8,6 +8,7 @@
 				<link rel="import" href="bower_components/webcomponentsjs/webcomponents.js">
 				<link rel="import" href="bower_components/polymer/polymer.html">
 				<link rel="import" href="bower_components/paper-material/paper-material.html">
+				<link rel="import" href="bower_components/app-layout/app-layout.html"> 
 				<link rel="stylesheet" href="main.css">
 		</head>
 
@@ -20,67 +21,79 @@
 						<img src = "hghan.jpg" class="pic" alt="Han" width="200"><br>
 						<h1><b>Hong-geun, Han</b></h1><br>
 
+						<app-drawer-layout>
+								<app-drawer>
+										<h3>
+												Hong-geun's CV
+												<ul>
+														<li>ABOUT ME</li>
+														<li>EXPERIENCE</li>
+														<li>ACTIVITY</li>
+														<li>PRIZE</li>
+														<li>LICENCE</li>
+												</ul>
+										</h3>
+								</app-drawer>
 
-						<h2>ABOUT ME</h2>	
-						<paper-material>
-								<ul class = "info">
-										<li>Mobile 010-2905-5959</li>
-										<li>E-mail enuri91@gmail.com</li>
-										<li>(P.O.BOX 08817)<br>
-												203, Solomon,<br>
-												73-12, Sillim-ro 11-gil,<br>
-												Gwanak-gu, Seoul, Republic of Korea</li>
-								</ul>
-						</paper-material>
-
-						<h2>EXPERIENCE</h2>
-						<paper-material>
-								<div id ="experience">
-										<ul>
-												<li>
-														Intern - Research Assistant<br>
-														2016. Sep ~ Current<br>
-														Lablup Inc.</li>
+								<h2>ABOUT ME</h2>	
+								<paper-material>
+										<ul class = "info">
+												<li>Mobile 010-2905-5959</li>
+												<li>E-mail enuri91@gmail.com</li>
+												<li>(P.O.BOX 08817)<br>
+														203, Solomon,<br>
+														73-12, Sillim-ro 11-gil,<br>
+														Gwanak-gu, Seoul, Republic of Korea</li>
 										</ul>
-								</div>
-						</paper-material>
+								</paper-material>
 
-						<h2>ACTIVITY</h2>    
-						<paper-material>
-								<div id = "activity">
-										<ul>
-												<li>SOSCON(2016) Hands on Assistant - Git/Github</li>
-												<li>HANYANG UNIVERSITY(2016) Git/Github Teaching</li>
-												<li>Open Source Software forum(2013 ~ current) Teaching assistant</li>
-												<li>Jpub publisher book reviwer(2015 ~ current)</li>
-												<li>Hanbit Academy publisher supporter(2016)</li>
-												<li>Military Service(2011 - 2012)</li>
-										</ul>
-								</div>
-						</paper-material>
+								<h2>EXPERIENCE</h2>
+								<paper-material>
+										<div id ="experience">
+												<ul>
+														<li>
+																Intern - Research Assistant<br>
+																2016. Sep ~ Current<br>
+																Lablup Inc.</li>
+												</ul>
+										</div>
+								</paper-material>
 
-
-						<h2>PRIZE</h2>
-						<paper-material>
-								<div id = "prize">
-										<ul>
-												<li>KAIST Drone Challenge(2015)</li>
-										</ul>
-								</div>
-						</paper-material>
-
-
-						<h2>LICENCE</h2>
-						<paper-material>
-								<div id = "licence">
-										<ul>
-												<li>data processing engineer</li>
-												<li>TOEIC - 720</li>
-										</ul>
-								</div>
-						</paper-material>
+								<h2>ACTIVITY</h2>    
+								<paper-material>
+										<div id = "activity">
+												<ul>
+														<li>SOSCON(2016) Hands on Assistant - Git/Github</li>
+														<li>HANYANG UNIVERSITY(2016) Git/Github Teaching</li>
+														<li>Open Source Software forum(2013 ~ current) Teaching assistant</li>
+														<li>Jpub publisher book reviwer(2015 ~ current)</li>
+														<li>Hanbit Academy publisher supporter(2016)</li>
+														<li>Military Service(2011 - 2012)</li>
+												</ul>
+										</div>
+								</paper-material>
 
 
+								<h2>PRIZE</h2>
+								<paper-material>
+										<div id = "prize">
+												<ul>
+														<li>KAIST Drone Challenge(2015)</li>
+												</ul>
+										</div>
+								</paper-material>
+
+
+								<h2>LICENCE</h2>
+								<paper-material>
+										<div id = "licence">
+												<ul>
+														<li>data processing engineer</li>
+														<li>TOEIC - 720</li>
+												</ul>
+										</div>
+								</paper-material>
+						</app-drawer-layout>
 				</div>
 		</body>
 </html>

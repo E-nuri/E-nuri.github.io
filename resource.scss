@@ -1,15 +1,21 @@
 @mixin t_align($spot){
-  text-align: $spot;
+		text-align: $spot;
 }
 
 @mixin bg_color($color){
-  background-color: $color;
+		background-color: $color;
+}
+
+@mixin txt_color($color){
+		color: $color;
 }
 
 paper_m{
-  width: 600px;
+		width: 600px;
 }
 
 paper_m_content_float{
-  float: left;
+		float: left;
 }
+
+
