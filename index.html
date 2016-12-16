@@ -9,35 +9,57 @@
 				<link rel="import" href="bower_components/polymer/polymer.html">
 				<link rel="import" href="bower_components/paper-material/paper-material.html">
 				<link rel="import" href="bower_components/app-layout/app-layout.html"> 
+				<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
+				<link rel="import" href="bower_components/app-layout/app-header/app-header.html">
+				<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
+				<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+				<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+				<link rel="import" href="bower_components/paper-progress/paper-progress.html">
+				<link rel="import" href="bower_components/paper-drawer-panel/paper-drawer-panel.html">
+				<link rel="import" href="bower_components/paper-fab/paper-fab.html">
+				<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+
+
+
 				<link rel="stylesheet" href="main.css">
+
 		</head>
+		<!-- for toolbar -->
+		<header>
+				<paper-toolbar class="toolbar">
+						<paper-icon-button icon="menu" onclick="leftDrawer.toggle()"></paper-icon-button>
+						<span>Hong-geun page</span>
+				</paper-toolbar>
+		</header>
 
 
-
-
+		<!-- CV section -->
 		<body>
-				<div id= "cv">
-						<h1>Software Developer</h1>
-						<img src = "hghan.jpg" class="pic" alt="Han" width="200"><br>
-						<h1><b>Hong-geun, Han</b></h1><br>
+				<h1>Software Developer</h1>
+				<img src = "hghan.jpg" class="pic" alt="Han" width="200"><br>
+				<h1><b>Hong-geun, Han</b></h1><br>
+				<app-drawer-layout>
+						<app-drawer id="leftDrawer" swipe-open>
+								<app-header reveals>
+										<app-toolbar>
+												<paper-icon-button icon="menu" onclick="leftDrawer.toggle()"></paper-icon-button>
+										</app-toolbar>
+								</app-header>
+								<h3>
+										Hong-geun's CV
+										<ul>
+												<li><a href="#info">ABOUT ME</a></li>
+												<li><a href="#experience">EXPERIENCE</a></li>
+												<li><a href="#activity">ACTIVITY</a></li>
+												<li><a href="#prize">PRIZE</a></li>
+												<li><a href="#licence">LICENCE</a></li>
 
-						<app-drawer-layout>
-								<app-drawer>
-
-										<h3>
-												Hong-geun's CV
-												<ul>
-														<li><a href="#info">ABOUT ME</a></li>
-														<li><a href="#experience">EXPERIENCE</a></li>
-														<li><a href="#activity">ACTIVITY</a></li>
-														<li><a href="#prize">PRIZE</a></li>
-														<li><a href="#licence">LICENCE</a></li>
-												</ul>
-										</h3>
-
-								</app-drawer>
-
-						</app-drawer-layout>
+												<a href="www.lablup.com">lablup.com</a>
+										</ul>
+								</h3>
+						</app-drawer>
+				</app-drawer-layout>
+				<div id="cv">
 						<a name="info">
 								<h2>ABOUT ME</h2>	
 								<paper-material>
@@ -50,7 +72,7 @@
 														Gwanak-gu, Seoul, Republic of Korea</li>
 										</ul>
 								</paper-material>
-						</div>
+						</a>
 						<a name="experience">
 								<h2>EXPERIENCE</h2>
 								<paper-material>
@@ -58,10 +80,11 @@
 												<li>
 														Intern - Research Assistant<br>
 														2016. Sep ~ Current<br>
-														Lablup Inc.</li>
+														Lablup Inc.
+												</li>
 										</ul>
 								</paper-material>
-						</div>
+						</a>
 						<a name="activity">
 								<h2>ACTIVITY</h2>    
 								<paper-material>
@@ -74,7 +97,7 @@
 												<li>Military Service(2011 - 2012)</li>
 										</ul>
 								</paper-material>
-						</div>
+						</a>
 						<a name="prize">
 								<h2>PRIZE</h2>
 								<paper-material>
@@ -82,7 +105,7 @@
 												<li>KAIST Drone Challenge(2015)</li>
 										</ul>
 								</paper-material>
-						</div>
+						</a>
 						<a name = "licence">
 								<h2>LICENCE</h2>
 								<paper-material>
@@ -91,7 +114,7 @@
 												<li>TOEIC - 720</li>
 										</ul>
 								</paper-material>
-						</div>
+						</a>
 				</div>
 		</body>
 </html>
