@@ -12,25 +12,27 @@
 				<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
 				<link rel="import" href="bower_components/app-layout/app-header/app-header.html">
 				<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
-				<link rel="import" href="bower_components/iron-icons/iron-icons.html">
 				<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-				<link rel="import" href="bower_components/paper-progress/paper-progress.html">
-				<link rel="import" href="bower_components/paper-drawer-panel/paper-drawer-panel.html">
-				<link rel="import" href="bower_components/paper-fab/paper-fab.html">
 				<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+				<link rel="import" href="style.html">
+				<link rel="stylesheet" type="text/css" href="main.css">
 
-
-
-				<link rel="stylesheet" href="main.css">
 
 		</head>
 		<!-- for toolbar -->
 		<header>
 				<paper-toolbar class="toolbar">
-						<paper-icon-button icon="menu" onclick="leftDrawer.toggle()"></paper-icon-button>
-						<span>Hong-geun page</span>
+						<div class = "container flex-equal-justified">
+								<div>Hong-geun page</div>
+								<div><a href="#info">ABOUT ME</a></div>
+								<div><a href="#experience">EXPERIENCE</a></div>
+								<div><a href="#activity">ACTIVITY</a></div>
+								<div><a href="#prize">PRIZE</a></div>
+								<div><a href="#licence">LICENCE</a></div>
+						</div>
 				</paper-toolbar>
 		</header>
+
 
 
 		<!-- CV section -->
@@ -38,32 +40,14 @@
 				<h1>Software Developer</h1>
 				<img src = "hghan.jpg" class="pic" alt="Han" width="200"><br>
 				<h1><b>Hong-geun, Han</b></h1><br>
-				<app-drawer-layout>
-						<app-drawer id="leftDrawer" swipe-open>
-								<app-header reveals>
-										<app-toolbar>
-												<paper-icon-button icon="menu" onclick="leftDrawer.toggle()"></paper-icon-button>
-										</app-toolbar>
-								</app-header>
-								<h3>
-										Hong-geun's CV
-										<ul>
-												<li><a href="#info">ABOUT ME</a></li>
-												<li><a href="#experience">EXPERIENCE</a></li>
-												<li><a href="#activity">ACTIVITY</a></li>
-												<li><a href="#prize">PRIZE</a></li>
-												<li><a href="#licence">LICENCE</a></li>
 
-												<a href="www.lablup.com">lablup.com</a>
-										</ul>
-								</h3>
-						</app-drawer>
-				</app-drawer-layout>
-				<div id="cv">
+
+				<div class="container flex-vertical">
+						<div class="flexchild-vertical">
 						<a name="info">
-								<h2>ABOUT ME</h2>	
 								<paper-material>
 										<ul>
+												<h2>ABOUT ME</h2>
 												<li>Mobile 010-2905-5959</li>
 												<li>E-mail enuri91@gmail.com</li>
 												<li>(P.O.BOX 08817)<br>
@@ -73,10 +57,12 @@
 										</ul>
 								</paper-material>
 						</a>
+						</div>
+						<div class="flexchild-vertical">
 						<a name="experience">
-								<h2>EXPERIENCE</h2>
 								<paper-material>
 										<ul>
+														<h2>EXPERIENCE</h2>
 												<li>
 														Intern - Research Assistant<br>
 														2016. Sep ~ Current<br>
@@ -85,10 +71,13 @@
 										</ul>
 								</paper-material>
 						</a>
+						</div>
+						<div class="flexchild-vertical">
 						<a name="activity">
-								<h2>ACTIVITY</h2>    
 								<paper-material>
 										<ul>
+
+												<h2>ACTIVITY</h2>    
 												<li>SOSCON(2016) Hands on Assistant - Git/Github</li>
 												<li>HANYANG UNIVERSITY(2016) Git/Github Teaching</li>
 												<li>Open Source Software forum(2013 ~ current) Teaching assistant</li>
@@ -98,23 +87,28 @@
 										</ul>
 								</paper-material>
 						</a>
+						</div>
+						<div class="flexchild-vertical">
 						<a name="prize">
-								<h2>PRIZE</h2>
 								<paper-material>
 										<ul>
+												<h2>PRIZE</h2>
 												<li>KAIST Drone Challenge(2015)</li>
 										</ul>
 								</paper-material>
 						</a>
+						</div>
+						<div class="flexchild-vertical">
 						<a name = "licence">
-								<h2>LICENCE</h2>
 								<paper-material>
 										<ul>
+												<h2>LICENCE</h2>
 												<li>data processing engineer</li>
 												<li>TOEIC - 720</li>
 										</ul>
 								</paper-material>
 						</a>
+						</div>
 				</div>
 		</body>
 </html>
