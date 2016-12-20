@@ -49,6 +49,18 @@ h3{
 
 }
 
+a{
+		@include txt_color(white);
+}
+
+flexchild-vertical h3{
+		@include txt_color(#1b4491);
+		font-weight: 100;
+}
+paper-item-body a{
+		@include txt_color(blue);
+}
+
 b, strong {
 		font-weight: 600;
 }
@@ -67,7 +79,6 @@ paper-material ul{
 		list-style-type:square;
 		margin-left:10px;
 		margin-bottom: 10px;
-		padding-top: 12px;
 		
 }
 

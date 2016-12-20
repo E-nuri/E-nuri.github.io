@@ -37,6 +37,16 @@ h3 {
   color: #1b4491;
   padding: 10px; }
 
+a {
+  color: white; }
+
+flexchild-vertical h3 {
+  color: #1b4491;
+  font-weight: 100; }
+
+paper-item-body a {
+  color: blue; }
+
 b, strong {
   font-weight: 600; }
 
@@ -51,8 +61,7 @@ paper-material ul {
   background: none;
   list-style-type: square;
   margin-left: 10px;
-  margin-bottom: 10px;
-  padding-top: 12px; }
+  margin-bottom: 10px; }
 
 paper-material ul.li {
   background-position: 0 .5em;

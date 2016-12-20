@@ -7,6 +7,8 @@
 				<title>Hong-geun Han's page</title>
 				<link rel="import" href="bower_components/webcomponentsjs/webcomponents.js">
 				<link rel="import" href="bower_components/polymer/polymer.html">
+
+
 				<link rel="import" href="bower_components/paper-material/paper-material.html">
 				<link rel="import" href="bower_components/app-layout/app-layout.html"> 
 				<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
@@ -14,6 +16,17 @@
 				<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
 				<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
 				<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+
+				<link rel="import" href="bower_components/iron-icon/iron-icon.html">
+				<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+				<link rel="import" href="bower_components/iron-icons/social-icons.html">
+				<link rel="import" href="bower_components/iron-icons/communication-icons.html">
+				<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+				<link rel="import" href="bower_components/paper-item/paper-item.html">
+				<link rel="import" href="bower_components/paper-item/paper-item-body.html">
+				<link rel="import" href="bower_components/paper-item/paper-icon-item.html">
+
+
 				<link rel="import" href="style.html">
 				<link rel="stylesheet" type="text/css" href="main.css">
 
@@ -22,8 +35,8 @@
 		<!-- for toolbar -->
 		<header>
 				<paper-toolbar class="toolbar">
-						<div class = "container flex-equal-justified">
 								<div>Hong-geun page</div>
+						<div class = "container flex-equal-justified">
 								<div><a href="#info">ABOUT ME</a></div>
 								<div><a href="#experience">EXPERIENCE</a></div>
 								<div><a href="#activity">ACTIVITY</a></div>
@@ -44,70 +57,104 @@
 
 				<div class="container flex-vertical">
 						<div class="flexchild-vertical">
-						<a name="info">
+								<a name="info"></a>
 								<paper-material>
-										<ul>
-												<h2>ABOUT ME</h2>
-												<li>Mobile 010-2905-5959</li>
-												<li>E-mail enuri91@gmail.com</li>
-												<li>(P.O.BOX 08817)<br>
-														203, Solomon,<br>
-														73-12, Sillim-ro 11-gil,<br>
-														Gwanak-gu, Seoul, Republic of Korea</li>
-										</ul>
-								</paper-material>
-						</a>
-						</div>
-						<div class="flexchild-vertical">
-						<a name="experience">
-								<paper-material>
-										<ul>
-														<h2>EXPERIENCE</h2>
-												<li>
-														Intern - Research Assistant<br>
-														2016. Sep ~ Current<br>
-														Lablup Inc.
-												</li>
-										</ul>
-								</paper-material>
-						</a>
-						</div>
-						<div class="flexchild-vertical">
-						<a name="activity">
-								<paper-material>
-										<ul>
+										<paper-item>
+												<paper-item-body two-line>
+														<h3>ABOUT ME</h3>
+														<div secondary>please contact me</div>
+												</paper-item-body>
+										</paper-item>
 
-												<h2>ACTIVITY</h2>    
+										<paper-icon-item>
+												<iron-icon icon="communication:phone" item-icon>
+												</iron-icon>
+												<paper-item-body two-line>
+														<div>(+82) 10-2905-5959</div>
+														<div secondary> Mobile</div>
+												</paper-item-body>
+										</paper-icon-item>
+
+										<paper-icon-item>
+												<iron-icon icon="communication:email" item-icon>
+												</iron-icon>
+												<paper-item-body>
+														<div>enuri91@gmail.com</div>
+												</paper-item-body>
+										</paper-icon-item>
+
+										<paper-icon-item>
+												<iron-icon icon="icons:search" item-icon>
+												</iron-icon>
+												<paper-item-body>
+														<div>Gwanak-gu, Seoul, Republic of Korea</div>
+												</paper-item-body>
+										</paper-icon-item>
+
+								</paper-material>
+
+						</div>
+						<div class="flexchild-vertical">
+								<a name="experience"></a>
+								<paper-material>
+										<paper-item>
+												<paper-item-body>
+														<h3>EXPERIENCE</h3>
+												</paper-item-body>
+										</paper-item>
+										<paper-icon-item>
+												<iron-icon icon="social:group" item-icon>
+												</iron-icon>
+												<paper-item-body two-line>
+														<div>Intern - Research Assistant</div>
+														<div secondary>2016. Sep ~ Current</div>
+														<div secondary><a href="http://lablup.github.io">Lablup Inc.</a></div>
+												</paper-item-body>
+										</paper-icon-item>
+								</paper-material>
+						</div>
+						<div class="flexchild-vertical">
+								<a name="activity"></a>
+								<paper-material>
+										<paper-item>
+												<h3>ACTIVITY</h3>
+										</paper-item>
+												<paper-item-body>
+														<ul>
 												<li>SOSCON(2016) Hands on Assistant - Git/Github</li>
 												<li>HANYANG UNIVERSITY(2016) Git/Github Teaching</li>
 												<li>Open Source Software forum(2013 ~ current) Teaching assistant</li>
 												<li>Jpub publisher book reviwer(2015 ~ current)</li>
 												<li>Hanbit Academy publisher supporter(2016)</li>
 												<li>Military Service(2011 - 2012)</li>
+														</ul>
+												</paper-item-body>
 										</ul>
+						</div>
 								</paper-material>
-						</a>
 						</div>
 						<div class="flexchild-vertical">
-						<a name="prize">
+								<a name="prize"></a>
 								<paper-material>
-										<ul>
-												<h2>PRIZE</h2>
+										<paper-item>
+												<h3>PRIZE</h3>
+										</paper-item>
+														<ul>
 												<li>KAIST Drone Challenge(2015)</li>
-										</ul>
+														</ul>
 								</paper-material>
-						</a>
 						</div>
 						<div class="flexchild-vertical">
-						<a name = "licence">
+								<a name = "licence"></a>
 								<paper-material>
+										<paper-item>
+												<h3>LICENCE</h3>
+										</paper-item>
 										<ul>
-												<h2>LICENCE</h2>
 												<li>data processing engineer</li>
 												<li>TOEIC - 720</li>
 										</ul>
 								</paper-material>
-						</a>
 						</div>
 				</div>
 		</body>
