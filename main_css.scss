@@ -49,8 +49,8 @@ h3{
 
 }
 
-a{
-		@include txt_color(white);
+paper-menu a{
+		@include txt_color(#1b4491);
 }
 
 flexchild-vertical h3{

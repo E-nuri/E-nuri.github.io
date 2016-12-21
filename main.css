@@ -37,8 +37,8 @@ h3 {
   color: #1b4491;
   padding: 10px; }
 
-a {
-  color: white; }
+paper-menu a {
+  color: #1b4491; }
 
 flexchild-vertical h3 {
   color: #1b4491;
