@@ -6,11 +6,19 @@ img.pic{
 }	 
 
 body {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: 'Roboto', 'Noto', sans-serif;
 		font-size: 16px;
 		line-height: 1.5;
 		margin: 0 auto;
+		display: block;
 		@include bg_color(lightgrey);
+}
+
+
+@media screen and (max-width: 200px){
+	body{
+		@apply(--layout-wrap);
+	}
 }
 
 
@@ -53,6 +61,10 @@ paper-menu a{
 		@include txt_color(#1b4491);
 }
 
+paper-icon-button{
+	margin: 10px;
+}
+
 flexchild-vertical h3{
 		@include txt_color(#1b4491);
 		font-weight: 100;
@@ -60,6 +72,7 @@ flexchild-vertical h3{
 paper-item-body a{
 		@include txt_color(blue);
 }
+
 
 b, strong {
 		font-weight: 600;
@@ -70,7 +83,7 @@ paper-material{
 		@include bg_color(white);
 		box-sizing: border-box;
 		border-radius: 10px;
-		display: block;
+		display: inline-block;
 		padding: 0 0 15px 0;
 }
 
@@ -87,4 +100,5 @@ paper-material ul.li{
 		display: block;
 		list-style-type: square;
 		margin-left: 30px;
+
 }

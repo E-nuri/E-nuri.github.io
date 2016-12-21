@@ -3,12 +3,16 @@ img.pic {
   margin: auto; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Noto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin: 0 auto;
+  display: block;
   background-color: lightgrey; }
 
+@media screen and (max-width: 200px) {
+  body {
+    @apply (--layout-wrap); } }
 cv {
   margin: auto;
   background-color: white;
@@ -40,6 +44,9 @@ h3 {
 paper-menu a {
   color: #1b4491; }
 
+paper-icon-button {
+  margin: 10px; }
+
 flexchild-vertical h3 {
   color: #1b4491;
   font-weight: 100; }
@@ -54,7 +61,7 @@ paper-material {
   background-color: white;
   box-sizing: border-box;
   border-radius: 10px;
-  display: block;
+  display: inline-block;
   padding: 0 0 15px 0; }
 
 paper-material ul {
