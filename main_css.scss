@@ -26,7 +26,14 @@ paper-tab a{
 	padding-left: 20px;
 	padding-right: 20px;
 	@include txt_color(white);
-	vertical-align: middle;
+	text-decoration:none;
+}
+
+paper-item a{
+	font-size: 20px;
+	padding-left: 20px;
+	@include txt_color(#1b4491);
+	text-decoration:none;
 }
 
 

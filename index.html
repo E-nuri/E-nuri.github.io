@@ -20,6 +20,7 @@
 		<link rel="import" href="bower_components/iron-icons/iron-icons.html">
 		<link rel="import" href="bower_components/iron-icons/social-icons.html">
 		<link rel="import" href="bower_components/iron-icons/communication-icons.html">
+		<link rel="import" href="bower_components/iron-icons/av-icons.html">
 		<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
 		<link rel="import" href="bower_components/paper-item/paper-item.html">
 		<link rel="import" href="bower_components/paper-item/paper-item-body.html">
@@ -56,11 +57,11 @@
 			<app-drawer>
 				<paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
 				<paper-menu selected="{{page}}">
-					<paper-item><a href="#info">ABOUT ME</a></paper-item>
-					<paper-item><a href="#experience">EXPERIENCE</a></paper-item>
-					<paper-item><a href="#activity">ACTIVITY</a></paper-item>
-					<paper-item><a href="#prize">PRIZE</a></paper-item>
-					<paper-item><a href="#license">LICENSE</a></paper-item>
+					<paper-item><iron-icon icon="icons:accessibility"></iron-icon><a href="#info">ABOUT ME</a></paper-item>
+					<paper-item><iron-icon icon="social:group"></iron-icon><a href="#experience">EXPERIENCE</a></paper-item>
+					<paper-item><iron-icon icon="av:library-books"></iron-icon><a href="#activity">ACTIVITY</a></paper-item>
+					<paper-item><iron-icon icon="icons:thumb-up"></iron-icon><a href="#prize">PRIZE</a></paper-item>
+					<paper-item><iron-icon icon="icons:card-membership"></iron-icon><a href="#license">LICENSE</a></paper-item>
 				</paper-menu>
 			</app-drawer>
 
