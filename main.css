@@ -10,9 +10,17 @@ body {
   display: block;
   background-color: lightgrey; }
 
-@media screen and (max-width: 200px) {
-  body {
-    @apply (--layout-wrap); } }
+paper-tabs, paper-toolbar {
+  background-color: var(--paper-blue-900);
+  color: #fff; }
+
+paper-tab a {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  vertical-align: middle; }
+
 cv {
   margin: auto;
   background-color: white;
@@ -31,8 +39,14 @@ h1 {
 
 h2 {
   clear: both;
-  color: #1b4491;
+  width: 150px;
+  margin: 0 20px 0 10px;
+  color: white;
   text-align: center; }
+
+paper-toolbar h2 {
+  width: 19em;
+  max-width: 100%; }
 
 h3 {
   width: 180px;

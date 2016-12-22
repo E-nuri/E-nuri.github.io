@@ -5,6 +5,7 @@ img.pic{
 		margin: auto;
 }	 
 
+
 body {
 		font-family: 'Roboto', 'Noto', sans-serif;
 		font-size: 16px;
@@ -15,10 +16,17 @@ body {
 }
 
 
-@media screen and (max-width: 200px){
-	body{
-		@apply(--layout-wrap);
-	}
+paper-tabs, paper-toolbar{
+	background-color: var(--paper-blue-900);
+	        color: #fff;
+}
+
+paper-tab a{
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	@include txt_color(white);
+	vertical-align: middle;
 }
 
 
@@ -43,9 +51,20 @@ h1{
 
 h2 {
 		clear: both;
-		@include txt_color(#1b4491);
+		width: 150px;
+		margin: 0 20px 0 10px;
+
+		@include txt_color(white);
 		@include t_align(center);
 }
+
+paper-toolbar h2{
+	width: 19em;
+	max-width: 100%;
+}
+
+
+
 
 h3{
 		width: 180px;
