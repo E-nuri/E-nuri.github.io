@@ -8,7 +8,6 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-build/
 develop-eggs/
 dist/
 downloads/
@@ -79,7 +78,6 @@ Thumbs.db
 .idea
 
 .sass*
-build/
 *.whl
 *.rej
 bucket/
