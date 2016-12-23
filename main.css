@@ -14,18 +14,19 @@ paper-tabs, paper-toolbar {
   background-color: var(--paper-blue-900);
   color: #fff; }
 
-paper-tab a {
+paper-tabs .paper-tab {
   font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 25px 20px;
   color: white;
   text-decoration: none; }
 
-paper-item a {
-  font-size: 20px;
+paper-item {
   padding-left: 20px;
-  color: #1b4491;
-  text-decoration: none; }
+  color: #1b4491; }
+
+paper-item p {
+  font-size: 18px;
+  padding-left: 20px; }
 
 cv {
   margin: auto;
@@ -61,18 +62,12 @@ h3 {
   color: #1b4491;
   padding: 10px; }
 
-paper-menu a {
-  color: #1b4491; }
-
 paper-icon-button {
   margin: 10px; }
 
 flexchild-vertical h3 {
   color: #1b4491;
   font-weight: 100; }
-
-paper-item-body a {
-  color: blue; }
 
 b, strong {
   font-weight: 600; }
