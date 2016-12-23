@@ -50,58 +50,37 @@
 
 
 
-
-
 		<app-drawer-layout fullbleed>
-
+			<!-- side drawer -->
 			<app-drawer>
 				<paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
 				<paper-menu selected="{{page}}">
-					<paper-item><iron-icon icon="icons:accessibility"></iron-icon><a href="#info">ABOUT ME</a></paper-item>
-					<paper-item><iron-icon icon="social:group"></iron-icon><a href="#experience">EXPERIENCE</a></paper-item>
-					<paper-item><iron-icon icon="av:library-books"></iron-icon><a href="#activity">ACTIVITY</a></paper-item>
-					<paper-item><iron-icon icon="icons:thumb-up"></iron-icon><a href="#prize">PRIZE</a></paper-item>
-					<paper-item><iron-icon icon="icons:card-membership"></iron-icon><a href="#license">LICENSE</a></paper-item>
+					<paper-item link onclick="location='#info'";><iron-icon icon="icons:accessibility"></iron-icon><p>ABOUT ME</p></paper-item>
+					<paper-item link onclick="location='#experience'";><iron-icon icon="social:group"></iron-icon><p>EXPERIENCE</p></paper-item>
+					<paper-item link onclick="location='#activity'";><iron-icon icon="av:library-books"></iron-icon><p>ACTIVITY</p></paper-item>
+					<paper-item link onclick="location='#prize'";><iron-icon icon="icons:thumb-up"></iron-icon><p>PRIZE</p></paper-item>
+					<paper-item link onclick="location='#licnse'";><iron-icon icon="icons:card-membership"></iron-icon><p>LICENSE</p></paper-item>
 				</paper-menu>
 			</app-drawer>
 
 
-
+			<!-- upper toolbar -->
 			<app-header-layout>
 				<app-header reveals condenses effects="waterfall">
 					<paper-toolbar class="toolbar">
 						<div><paper-icon-button icon="menu" drawer-toggle></paper-icon-button></div>
 						<h2>Hong-geun page</h2>
-							<paper-tabs selected="0" scrollable style="width: 100%;">
-								<paper-tab link><a href="#info">ABOUT ME</a></paper-tab>
-								<paper-tab link><a href="#experience">EXPERIENCE</a></paper-tab>
-								<paper-tab link><a href="#activity">ACTIVITY</a></paper-tab>
-								<paper-tab link><a href="#prize">PRIZEM</a></paper-tab>
-								<paper-tab link><a href="#licnese">LICENSE</a></paper-tab>
-							</paper-tabs>
+						<paper-tabs selected="0" scrollable style="width: 100%;">
+							<paper-tab link onclick="location='#info'";>ABOUT ME</paper-tab>
+							<paper-tab link onclick="location='#experience'";>EXPERIENCE</paper-tab>
+							<paper-tab link onclick="location='#activity'";>ACTIVITY</paper-tab>
+							<paper-tab link onclick="location='#prize'";>PRIZEM</paper-tab>
+							<paper-tab link onclick="location='#license'";>LICENSE</paper-tab>
+						</paper-tabs>
 					</paper-toolbar>
 				</app-header>
 
 
-
-				<!-- for toolbar -->
-				<!--
-		<app-header-layout>
-		<app-header reveals condenses effects="waterfall">
-		<paper-toolbar class="toolbar">
-		<div><paper-icon-button icon="menu" drawer-toggle></paper-icon-button></div>
-		<h2>Hong-geun<br>page</h2>
-		<div class = "container flex-equal-justified">
-		<div><a href="#info">ABOUT ME</a></div>
-		<div><a href="#experience">EXPERIENCE</a></div>
-		<div><a href="#activity">ACTIVITY</a></div>
-		<div><a href="#prize">PRIZE</a></div>
-		<div><a href="#license">LICENSE</a></div>
-		</div>
-		</paper-toolbar>
-		</app-header>
-
-				-->
 				<div>
 					<!-- CV section -->
 					<h1>Software Developer</h1>
@@ -109,8 +88,7 @@
 					<h1><b>Hong-geun, Han</b></h1><br>
 
 					<div class="container flex-vertical">
-						<div class="flexchild-vertical">
-							<a name="info"></a>
+						<div class="flexchild-vertical" id="info">
 							<paper-material>
 								<paper-item>
 									<paper-item-body two-line>
@@ -149,8 +127,7 @@
 							</paper-material>
 
 						</div>
-						<div class="flexchild-vertical">
-							<a name="experience"></a>
+						<div class="flexchild-vertical" id="experience">
 							<paper-material>
 								<paper-item>
 									<h3>EXPERIENCE</h3>
@@ -166,8 +143,7 @@
 								</paper-icon-item>
 							</paper-material>
 						</div>
-						<div class="flexchild-vertical">
-							<a name="activity"></a>
+						<div class="flexchild-vertical" id="activity">
 							<paper-material>
 								<paper-item>
 									<h3>ACTIVITY</h3>
@@ -186,8 +162,7 @@
 							</paper-material>
 						</div>
 					</div>
-					<div class="flexchild-vertical">
-						<a name="prize"></a>
+					<div class="flexchild-vertical" id="prize">
 						<paper-material>
 							<paper-item>
 								<h3>PRIZE</h3>
@@ -197,8 +172,7 @@
 							</ul>
 						</paper-material>
 					</div>
-					<div class="flexchild-vertical">
-						<a name = "license"></a>
+					<div class="flexchild-vertical" id="license">
 						<paper-material>
 							<paper-item>
 								<h3>LICENSE</h3>
@@ -210,7 +184,7 @@
 						</paper-material>
 					</div>
 				</div>
-		</app-header-layout>
-			</app-drawer-layout>
+			</app-header-layout>
+		</app-drawer-layout>
 	</body>
 </html>

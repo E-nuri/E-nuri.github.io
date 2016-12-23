@@ -21,21 +21,22 @@ paper-tabs, paper-toolbar{
 	        color: #fff;
 }
 
-paper-tab a{
+paper-tabs .paper-tab {
 	font-size: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0 20px 25px 20px;
 	@include txt_color(white);
 	text-decoration:none;
 }
 
-paper-item a{
-	font-size: 20px;
+paper-item{
 	padding-left: 20px;
 	@include txt_color(#1b4491);
-	text-decoration:none;
 }
 
+paper-item p{
+	font-size: 18px;
+	padding-left: 20px;
+}
 
 cv{
 		margin: auto;
@@ -83,8 +84,7 @@ h3{
 
 }
 
-paper-menu a{
-		@include txt_color(#1b4491);
+iron-icon{
 }
 
 paper-icon-button{
@@ -94,9 +94,6 @@ paper-icon-button{
 flexchild-vertical h3{
 		@include txt_color(#1b4491);
 		font-weight: 100;
-}
-paper-item-body a{
-		@include txt_color(blue);
 }
 
 
